@@ -17,8 +17,8 @@ SETENV("KUEHL_HEUTE", "2026-11-08")
 PRINT "code "; kProbe(p, "probe.dh", "", 5)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)
@@ -95,8 +95,8 @@ FOR EACH z IN READLINES(CWD$() + "/bestand.csv")
 NEXT
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)
@@ -234,8 +234,8 @@ slWarten(10)
 slAufnahmeSchreiben(p + "/_studio/klick.txt")
 PRINT "code "; kProbe(p, "klick.dh", "klick.txt", slBild + 20)
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)
@@ -308,8 +308,8 @@ slWarten(20)
 slAufnahmeSchreiben(p + "/_studio/klick.txt")
 PRINT "code "; kProbe(p, "klick.dh", "klick.txt", slBild + 20)
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)
@@ -355,8 +355,8 @@ SETENV("KUEHL_HEUTE", "2026-11-08")
 SETENV("DH_STUDIO_DATEN", p)
 PRINT "code "; kProbe(p, "probe.dh", "", 5)
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)

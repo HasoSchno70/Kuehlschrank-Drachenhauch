@@ -134,7 +134,7 @@ PRINT "dateien "; nForm > 15; " "; nCode > 40
 PRINT "genug texte "; MAPSIZE(gesehen) > 600
 PRINT "fehlt "; fehlt; " verwaist "; verwaist; " doppelt "; doppelt; " falsch "; falsch
 --- argumente
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../..
 --- erwartet
 dateien TRUE TRUE
 genug texte TRUE
@@ -159,8 +159,8 @@ PRINT "code "; kProbe(p, "probe.dh", "", 1500)
 PRINT "luecken '"; IIF(FILEEXISTS(CWD$() + "/luecken.txt"), REPLACE$(READALL(CWD$() + "/luecken.txt"), CHR$(10), " | "), ""); "'"
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)
@@ -286,8 +286,8 @@ SETENV("DHRT_LANG", "en")
 PRINT "code "; kProbe(p, "probe2.dh", "", 1500)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)

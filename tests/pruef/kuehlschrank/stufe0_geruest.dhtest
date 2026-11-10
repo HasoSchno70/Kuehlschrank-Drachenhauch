@@ -1,5 +1,5 @@
 ' Kuehlschrank-App im Drachenhauch Studio, Stufe 0: Geruest und Datenbank
-' (examples/studio/kuehlschrank). Das Projekt steht so im Ordner, wie das
+' (dieses Repo). Das Projekt steht so im Ordner, wie das
 ' Studio es schreibt; F5 erzeugt ein Programm, das sich ohne Befund
 ' uebersetzt; eine neue Datei bekommt die Startdaten der Python-App; die
 ' Datei der Python-App (fridge_database.db) bleibt beim Start, wie sie ist,
@@ -26,20 +26,20 @@ PRINT "projektdatei "; projektJson$() = JOIN$(READLINES(PATHJOIN(o, PROJEKT_DATE
 DIM s AS JSON_HANDLE : s = dbSchema(elemente[elementIndex("Daten")])
 PRINT "daten "; dbDateiVon$(s); " tabellen "; dbTabZahl(s)
 --- argumente
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../..
 --- datei modell_imp.dh
 IMPORT "json"
 IMPORT "regex"
 IMPORT "imgfx"
 IMPORT "db"
 IMPORT "pdf"
-IMPORT "{sammlung}/../../../studio/sprache.dh"
-IMPORT "{sammlung}/../../../studio/bibliothek.dh"
-IMPORT "{sammlung}/../../../studio/modell.dh"
-IMPORT "{sammlung}/../../../studio/projekt.dh"
-IMPORT "{sammlung}/../../../studio/datenbank.dh"
-IMPORT "{sammlung}/../../../studio/berichte_laufzeit.dh"
-IMPORT "{sammlung}/../../../studio/berichte.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/sprache.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/bibliothek.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/modell.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/projekt.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/datenbank.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/berichte_laufzeit.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/berichte.dh"
 --- erwartet
 laden []
 elemente 48 start Hauptfenster
@@ -121,20 +121,20 @@ FOR EACH e IN elemente
     PRINT e.name; " "; IIF(LEN(zu) = 0, "passt", "ragt hinaus: " + JOIN$(zu, ", "))
 NEXT
 --- argumente
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../..
 --- datei modell_imp.dh
 IMPORT "json"
 IMPORT "regex"
 IMPORT "imgfx"
 IMPORT "db"
 IMPORT "pdf"
-IMPORT "{sammlung}/../../../studio/sprache.dh"
-IMPORT "{sammlung}/../../../studio/bibliothek.dh"
-IMPORT "{sammlung}/../../../studio/modell.dh"
-IMPORT "{sammlung}/../../../studio/projekt.dh"
-IMPORT "{sammlung}/../../../studio/datenbank.dh"
-IMPORT "{sammlung}/../../../studio/berichte_laufzeit.dh"
-IMPORT "{sammlung}/../../../studio/berichte.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/sprache.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/bibliothek.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/modell.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/projekt.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/datenbank.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/berichte_laufzeit.dh"
+IMPORT "{sammlung}/../../../../Drachenhauch/studio/berichte.dh"
 --- erwartet
 Hauptfenster passt
 BestandSeite passt
@@ -172,8 +172,8 @@ SETENV("KUEHL_HEUTE", "2026-11-08")
 PRINT "code "; kProbe(p, "probe.dh", "", 5)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)
@@ -259,8 +259,8 @@ PRINT "code "; kProbe(p, "probe.dh", "", 5)
 PRINT "aufbau nach der probe "; kAufbau$(p + "/fridge_database.db") = vorher
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)

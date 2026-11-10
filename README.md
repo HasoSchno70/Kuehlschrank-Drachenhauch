@@ -1,9 +1,23 @@
-# Kühlschrank-Verwaltung
+# Kühlschrank-Verwaltung (Drachenhauch)
 
 Vorrat, Lagerorte, Einkauf, Rezepte und Statistik für die Küche -- ein
-Projekt für das Drachenhauch Studio. Es ist ein Port einer PySide6-App
-(„Kühlschrank“) und liest deren Datenbank `fridge_database.db` mit
-demselben Aufbau.
+Projekt für das [Drachenhauch](https://github.com/HasoSchno70/Drachenhauch)
+Studio. Es ist ein Port einer PySide6-App („Kühlschrank“) und liest deren
+Datenbank `fridge_database.db` mit demselben Aufbau.
+
+Bis November 2026 lag das Projekt in Drachenhauch unter
+`examples/studio/kuehlschrank/`, die Geschichte ist mitgekommen. Verweise wie
+`HasoSchno70/Drachenhauch#527` in den Commits zeigen auf die Pull Requests von
+damals.
+
+## Voraussetzungen
+
+**Drachenhauch 2026.45 oder neuer** mit dem Studio, am einfachsten das Paket
+von der [Release-Seite](https://github.com/HasoSchno70/Drachenhauch/releases/latest).
+Das Projekt wird vom Studio erzeugt und braucht ein Studio derselben oder einer
+neueren Fassung.
+
+## Starten
 
 Im Studio: Datei → Öffnen, diesen Ordner wählen, F5. Ohne Studio, nachdem
 es einmal erzeugt hat:
@@ -73,4 +87,17 @@ Adressen der Dienste, `KUEHL_HEUTE` und `KUEHL_JETZT` die Uhr,
 ersetzen die Dateidialoge. Geprüft in `tests/pruef/kuehlschrank/` (je Stufe
 eine Sammlung) -- mit eigenen Servern auf 127.0.0.1, nie gegen die echten
 Dienste. Wie der Port entstand und worin er von der Python-App abweicht,
-steht in `geschichte/kuehlschrank.md`.
+steht in Drachenhauch unter
+[`geschichte/kuehlschrank.md`](https://github.com/HasoSchno70/Drachenhauch/blob/main/geschichte/kuehlschrank.md).
+
+Die Sammlungen brauchen das Studio als Quelltext: ein Klon von Drachenhauch
+im Ordner **neben** diesem Repo (`../Drachenhauch`), und `dhrt` im Pfad.
+
+```
+dhrt test tests/pruef
+```
+
+## Lizenz
+
+Wahlweise [MIT](LICENSE-MIT) oder [Apache 2.0](LICENSE-APACHE), wie Drachenhauch
+selbst.

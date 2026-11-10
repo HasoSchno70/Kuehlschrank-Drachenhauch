@@ -24,8 +24,8 @@ SETENV("KUEHL_HEUTE", "2026-11-08")
 PRINT "code "; kProbe(p, "probe.dh", "", 5)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)
@@ -139,8 +139,8 @@ FOR EACH a IN gets
 NEXT
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 {sammlung}/../_hilfen/spoon_server.dh
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
@@ -279,8 +279,8 @@ kOffEnde(srv)
 PRINT "anfragen "; kOffAnfragen$()
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 {sammlung}/../_hilfen/spoon_server.dh
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
@@ -361,8 +361,8 @@ PRINT "code "; kProbe(p, "probe.dh", "", 1500)
 kOffEnde(srv)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 {sammlung}/../_hilfen/spoon_server.dh
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
@@ -432,8 +432,8 @@ IF FILEEXISTS(CWD$() + "/anfragen.txt") THEN
 END IF
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 {sammlung}/../_hilfen/spoon_server.dh
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
@@ -541,8 +541,8 @@ kOffEnde(srv)
 PRINT "anfragen "; kOffAnfragen$()
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 {sammlung}/../_hilfen/spoon_server.dh
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"

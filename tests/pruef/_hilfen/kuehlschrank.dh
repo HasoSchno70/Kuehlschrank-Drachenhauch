@@ -1,4 +1,4 @@
-' Pruefungen der Kuehlschrank-App (examples/studio/kuehlschrank): das Projekt
+' Pruefungen der Kuehlschrank-App (dieses Repo): das Projekt
 ' in den Fallordner kopieren, im Studio mit F5 starten (studiolauf.dh) und
 ' danach das erzeugte Programm eine Probe fahren lassen -- dasselbe main.dh,
 ' nur dass statt der Bildschleife die Zeilen einer Probe-Datei laufen.

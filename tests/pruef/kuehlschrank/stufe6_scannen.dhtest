@@ -25,8 +25,8 @@ SETENV("KUEHL_HEUTE", "2026-11-08")
 PRINT "code "; kProbe(p, "probe.dh", "", 5)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)
@@ -96,9 +96,9 @@ PRINT "kennung "; INSTR(READALL(CWD$() + "/anfragen.txt"), "Kuehlschrank-App/1.0
 kOffEnde(srv)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
-{sammlung}/../../../daten/bilder/logo.png
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
+{sammlung}/../../../../Drachenhauch/daten/bilder/logo.png
 {sammlung}/../_hilfen/off_server.dh
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
@@ -181,9 +181,9 @@ PRINT "code "; kProbe(p, "probe.dh", "tasten.txt", 400)
 kOffEnde(srv)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
-{sammlung}/../../../daten/bilder/logo.png
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
+{sammlung}/../../../../Drachenhauch/daten/bilder/logo.png
 {sammlung}/../_hilfen/off_server.dh
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
@@ -294,8 +294,8 @@ slAufnahmeSchreiben(p + "/_studio/tasten.txt")
 PRINT "code "; kProbe(p, "probe.dh", "tasten.txt", 200)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)
@@ -353,8 +353,8 @@ slAufnahmeSchreiben(p + "/_studio/tasten.txt")
 PRINT "code "; kProbe(p, "probe.dh", "tasten.txt", 200)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)
@@ -426,9 +426,9 @@ PRINT "anfragen "; kOffAnfragen$()
 kOffEnde(srv)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
-{sammlung}/../../../daten/bilder/logo.png
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
+{sammlung}/../../../../Drachenhauch/daten/bilder/logo.png
 {sammlung}/../_hilfen/off_server.dh
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
@@ -505,8 +505,8 @@ slAufnahmeSchreiben(p + "/_studio/klick.txt")
 PRINT "code "; kProbe(p, "klick.dh", "klick.txt", slBild + 20)
 IF INSTR(aus, "Laufzeitfehler") >= 0 THEN PRINT aus
 --- argumente
-{sammlung}/../../../studio/studio.dh
-{sammlung}/../../../examples/studio/kuehlschrank
+{sammlung}/../../../../Drachenhauch/studio/studio.dh
+{sammlung}/../../..
 --- datei laeufer.dh
 IMPORT "{sammlung}/../_hilfen/kuehlschrank.dh"
 slStudio = ARG$(0)
